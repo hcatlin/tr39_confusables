@@ -9,6 +9,7 @@ class SkeletonTest < Minitest::Test
     assert_skeleton_equal "paypal", "paypal"
 
     assert_skeleton_not_equal "Al", "AI"
+    assert_skeleton_not_equal "barn", "bam"
   end
 
   def test_equal
@@ -19,6 +20,6 @@ class SkeletonTest < Minitest::Test
   end
 
   def test_consuable?
-    assert_equal true, Tr39Confusables.is_confusable?("lscopecC鬼obƅa", "1scopecC⿁оbьа")
+    assert_equal true, Tr39Confusables.is_confusable?("scopecC鬼obƅa", "scopecC⿁оbьа")
   end
 end

@@ -27,7 +27,7 @@ class MappingTest < Minitest::Test
 
   def test_mixture
     assert_mapping "cc鬼obƅa", "cс⿁оbьа"
-    assert_mapping "l23456789", "1Ϩ3Ꮞ5678৭"
+    assert_mapping "123456789", "1Ϩ3Ꮞ5678৭"
   end
 
   def text_upper_case
