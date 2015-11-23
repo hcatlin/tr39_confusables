@@ -7,6 +7,8 @@ class SkeletonTest < Minitest::Test
     assert_skeleton_equal "paypal", "𝔭𝒶ỿ𝕡𝕒ℓ"
     assert_skeleton_equal "ρ⍺у𝓅𝒂ן", "paypal"
     assert_skeleton_equal "paypal", "paypal"
+
+    assert_skeleton_not_equal "Al", "AI"
   end
 
   def test_equal

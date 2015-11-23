@@ -8,3 +8,7 @@ end
 def assert_skeleton_equal(expected, actual)
   assert_equal Tr39Confusables.skeleton(expected), Tr39Confusables.skeleton(actual)
 end
+
+def assert_skeleton_not_equal(expected, actual)
+  refute_equal Tr39Confusables.skeleton(expected), Tr39Confusables.skeleton(actual)
+end
